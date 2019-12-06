@@ -7,10 +7,7 @@ import lombok.extern.log4j.Log4j;
 import oracle.jdbc.proxy.annotation.Post;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.domain.BoardVO;
 import org.zerock.service.BoardService;
@@ -28,7 +25,13 @@ public class BoardController {
         model.addAttribute("list", service.getList());
     }
 
+    @GetMapping("/register")
+    public void register() {
+
+    }
+
     @PostMapping("/register")
+//    @RequestMapping(value="/register" , method = {RequestMethod.GET, RequestMethod.POST})
     public String register(BoardVO board, RedirectAttributes rttr) {
         log.info("register: " + board);
         service.register(board);
@@ -36,10 +39,10 @@ public class BoardController {
         return "redirect:/board/list";
     }
 
-    @GetMapping("/get")
+    @GetMapping({"get", "/modify"})
     public void get(@RequestParam("bno") Long bno, Model model) {
-    log.info("/get");
-    model.addAttribute("board", service.get(bno));
+        log.info("/get or modify");
+        model.addAttribute("board", service.get(bno));
     }
 
     @PostMapping("/modify")
@@ -60,4 +63,5 @@ public class BoardController {
         }
         return "redirect:/board/list";
     }
+
 }

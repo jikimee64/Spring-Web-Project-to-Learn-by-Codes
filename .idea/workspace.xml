@@ -2,63 +2,30 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="SpringMavenProject:war" />
       <artifact name="SpringMavenProject:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d604cdf-54d6-4009-a1b4-0a8cf442ef20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/domain/BoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/mapper/BoardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/service/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/zerock/mapper/BoardMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/controller/BoardControllerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/mapper/BoardMapperTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/service/BoardServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMavenProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMavenProject_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/controller/SampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/domain/SampleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/domain/SampleDTOList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/domain/TodoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/exception/CommonExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/mapper/TimeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_page.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/persistence/DataSourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/persistence/DataSourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/persistence/TimeMapperTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/log4jdbc.log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/log4jdbc.log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org.zerock.config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/RootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/RootConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/ServletConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/ServletConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/SampleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/domain/SampleDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/domain/SampleDTOList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/domain/TodoDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/exception/CommonExceptionAdvice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/mapper/TimeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/custom404.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/error_page.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4jdbc.log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4jdbc.log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/RootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/RootConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/ServletConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/ServletConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/controller/SampleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/domain/SampleDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/domain/SampleDTOList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/domain/TodoDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/exception/CommonExceptionAdvice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/mapper/TimeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/zerock/persistence/TimeMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SpringMavenProject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/SpringMavenProject.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,10 +67,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Jsp File" />
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -124,8 +91,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/소프트웨어/학업 소프트웨어/sqldeveloper/jdbc/lib/ojdbc8.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Spring-Web-Project-to-Learn-by-Codes-master" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.16699219" />
     <property name="project.structure.side.proportion" value="0.3393035" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -158,7 +125,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoardControllerTests">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.274">
     <configuration name="BoardControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringMavenProject" />
       <extension name="coverage">
@@ -236,6 +203,8 @@
     </configuration>
     <configuration name="Tomcat 9.0.274" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.274" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8001" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="SpringMavenProject:war exploded">
@@ -302,11 +271,17 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="SpringMavenProject:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="false" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BoardControllerTests" />
+      <item itemvalue="JUnit.BoardMapperTests" />
+      <item itemvalue="JUnit.BoardServiceTests" />
+      <item itemvalue="JUnit.DataSourceTest" />
+      <item itemvalue="JUnit.JDBCTest" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.274" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BoardControllerTests" />
@@ -342,7 +317,18 @@
       <workItem from="1574774362092" duration="6295000" />
       <workItem from="1574859012704" duration="1200000" />
       <workItem from="1575121816797" duration="603000" />
-      <workItem from="1575175639447" duration="12949000" />
+      <workItem from="1575175639447" duration="13104000" />
+      <workItem from="1575359144272" duration="2070000" />
+      <workItem from="1575539941355" duration="619000" />
+      <workItem from="1575554885156" duration="603000" />
+      <workItem from="1575603296996" duration="5245000" />
+      <workItem from="1575609590902" duration="1584000" />
+      <workItem from="1575611256156" duration="1806000" />
+      <workItem from="1575613500936" duration="5906000" />
+      <workItem from="1575620795918" duration="410000" />
+      <workItem from="1575621315046" duration="95000" />
+      <workItem from="1575621829081" duration="842000" />
+      <workItem from="1575622705629" duration="8250000" />
     </task>
     <servers />
   </component>

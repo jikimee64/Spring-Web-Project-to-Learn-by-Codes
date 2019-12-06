@@ -37,7 +37,7 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.29" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.4" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
-          <element id="library" level="project" name="ojdbc8" />
+          <element id="library" level="project" name="lib" />
         </element>
       </element>
       <element id="directory" name="META-INF">
