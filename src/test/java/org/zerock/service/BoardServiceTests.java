@@ -1,25 +1,26 @@
 package org.zerock.service;
 
 import lombok.Setter;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criteria;
 
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {org.zerock.config.RootConfig.class})
-@Log4j
+@Slf4j
 public class BoardServiceTests {
     @Setter(onMethod_ = @Autowired)
     private BoardService service;
 
     public void testExist() {
-        log.info(service);
+        log.info(String.valueOf(service));
         assertNotNull(service);
     }
 
@@ -34,12 +35,12 @@ public class BoardServiceTests {
         log.info("생성된 게시물의 번호 : " + board.getBno());
     }
 
-    public void testGetList() {
-        service.getList().forEach(board -> log.info(board));
-    }
+//    public void testGetList() {
+//        service.getList().forEach(board -> log.info(String.valueOf(board)));
+//    }
 
     public void testGet() {
-        log.info(service.get(46L));
+        log.info(String.valueOf(service.get(46L)));
     }
 
     public void testDelete() {
@@ -47,7 +48,7 @@ public class BoardServiceTests {
         log.info("REMOVE RESULT: " + service.remove(46L));
     }
 
-    @Test
+    //@Test
     public void testUpdate() {
         BoardVO board = service.get(47L);
 
@@ -59,5 +60,9 @@ public class BoardServiceTests {
         log.info("MODIFY RESULT: " + service.modify(board));
     }
 
-
+    @Test
+    public void testgetList() {
+        //service.getList().forEach(board -> log.info(board));
+        service.getList(new Criteria(2, 10)).forEach(board -> log.info(String.valueOf(board)));
+    }
 }

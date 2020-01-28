@@ -1,13 +1,11 @@
 package org.zerock.persistence;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
-
 import static org.junit.Assert.fail;
 
-@Log4j
+@Slf4j
 public class JDBCTest {
     static {
         try {
@@ -19,9 +17,9 @@ public class JDBCTest {
     @Test
     public void testConnection() {
         try(Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "system", "Rladncjf1")){
-            log.info(con);
+            log.info(String.valueOf(con));
         }catch (Exception e){
-            fail(e.getMessage());
+            log.error(e.getMessage());
         }
     }
 }

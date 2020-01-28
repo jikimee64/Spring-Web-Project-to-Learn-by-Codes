@@ -1,26 +1,27 @@
 package org.zerock.mapper;
 
-
 import lombok.Setter;
-import lombok.extern.java.Log;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criteria;
+
+import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {org.zerock.config.RootConfig.class})
-@Log4j
+@Slf4j
 public class BoardMapperTests<boardMapper> {
     @Setter(onMethod_ = @Autowired)
     private BoardMapper mapper;
 
     @Test
     public void testGetList() {
-        mapper.getList().forEach(board -> log.info(board));
+        mapper.getList().forEach(board -> log.info(String.valueOf(board)));
     }
 
     @Test
@@ -31,7 +32,7 @@ public class BoardMapperTests<boardMapper> {
         board.setWriter("newbie");
 
         mapper.insert(board);
-        log.info(board);
+        log.info(String.valueOf(board));
     }
 
     @Test
@@ -42,14 +43,14 @@ public class BoardMapperTests<boardMapper> {
         board.setWriter("newbie");
 
         mapper.insertSelectKey(board);
-        log.info(board);
+        log.info(String.valueOf(board));
     }
 
     @Test
     public void testRead() {
         //존재하는 게시물 번호로 테스트
         BoardVO board = mapper.read(21L);
-        log.info(board);
+        log.info(String.valueOf(board));
     }
 
     @Test
@@ -69,5 +70,14 @@ public class BoardMapperTests<boardMapper> {
         int count = mapper.update(board);
         log.info("UPDATE COUNT: " + count);
     }
+        @Test
+        public void testPaging() {
+            Criteria cri = new Criteria();
+            //10개씩 3페이지
+            cri.setPageNum(1);
+            cri.setAmount(10);
+            List<BoardVO> list = mapper.getListWithPaging(cri);
+            list.forEach(board -> log.info(String.valueOf(board.getBno())));
+        }
 
 }

@@ -6,7 +6,7 @@ import javax.servlet.ServletRegistration;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-
+//DispatcherServlet 사용를 위한 상속 후 구현
 public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
@@ -21,11 +21,12 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
         return new String[] {"/"};
     }
 
-    @Override
+    @Override //404 에러페이지 별도 지정 설정
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
         registration.setInitParameter("throwExceptionIfNoHandlerFound", "true");
     }
 
+    //한글 처리 필터 메소드
     @Override
     protected Filter[] getServletFilters() {
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();

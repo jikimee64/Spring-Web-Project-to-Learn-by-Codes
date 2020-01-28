@@ -1,0 +1,22 @@
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+<!--  <logger name="org.springframework.jdbc" level="debug"/>-->
+
+<!--  <logger name="jdbc" level="OFF"/>-->
+<!--  공부하고 써먹기 / https://www.leafcats.com/45-->
+<!--  <logger name="jdbc.sqlonly" level="OFF"/>-->
+<!--  <logger name="jdbc.sqltiming" level="DEBUG"/>-->
+<!--  <logger name="jdbc.audit" level="OFF"/>-->
+<!--  <logger name="jdbc.resultset" leve="OFF" />-->
+<!--  <logger name="jdbc.resultsettable" level="DEBUG"/>-->
+<!--  <logger name="jdbc.connection" level="OFF"/>-->
+
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

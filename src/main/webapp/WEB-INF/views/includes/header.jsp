@@ -139,7 +139,7 @@
                     <li class="divider"></li>
                     <li>
                         <a href="#">
-                            <div>
+                            <div>ㄹ
                                 <p>
                                     <strong>Task 2</strong>
                                     <span class="pull-right text-muted">20% Complete</span>
