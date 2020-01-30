@@ -13,7 +13,7 @@ import org.zerock.mapper.BoardMapper;
 
 @Slf4j
 @Service
-//@AllArgsConstructor
+@AllArgsConstructor
 public class BoardServiceImpl implements BoardService {
 
     @Setter(onMethod_ = @Autowired)
@@ -53,6 +53,12 @@ public class BoardServiceImpl implements BoardService {
     public List<BoardVO> getList(Criteria cri) {
         log.info("get List with criteria: " + cri);
         return mapper.getListWithPaging(cri);
+    }
+
+    @Override
+    public int getTotal(Criteria cri) {
+        log.info("get total count");
+        return mapper.getTotalCount(cri);
     }
 
 }

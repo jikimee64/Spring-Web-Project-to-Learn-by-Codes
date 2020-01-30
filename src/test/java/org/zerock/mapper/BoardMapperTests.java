@@ -19,12 +19,12 @@ public class BoardMapperTests<boardMapper> {
     @Setter(onMethod_ = @Autowired)
     private BoardMapper mapper;
 
-    @Test
+    //@Test
     public void testGetList() {
         mapper.getList().forEach(board -> log.info(String.valueOf(board)));
     }
 
-    @Test
+    //@Test
     public void testInsert(){
         BoardVO board = new BoardVO();
         board.setTitle("새로 작성하는 글");
@@ -35,7 +35,7 @@ public class BoardMapperTests<boardMapper> {
         log.info(String.valueOf(board));
     }
 
-    @Test
+    //@Test
     public void testInsertSelectKey() {
         BoardVO board = new BoardVO();
         board.setTitle("새로 작성하는 글 select key");
@@ -46,19 +46,19 @@ public class BoardMapperTests<boardMapper> {
         log.info(String.valueOf(board));
     }
 
-    @Test
+    //@Test
     public void testRead() {
         //존재하는 게시물 번호로 테스트
         BoardVO board = mapper.read(21L);
         log.info(String.valueOf(board));
     }
 
-    @Test
+    //@Test
     public void testDelete() {
         log.info("DELETE COUNT: " + mapper.delete(40L));
     }
 
-    @Test
+    //@Test
     public void testUpdate() {
         BoardVO board = new BoardVO();
         //실행전 존재하는 번호인지 확인할 것
@@ -70,7 +70,7 @@ public class BoardMapperTests<boardMapper> {
         int count = mapper.update(board);
         log.info("UPDATE COUNT: " + count);
     }
-        @Test
+        //@Test
         public void testPaging() {
             Criteria cri = new Criteria();
             //10개씩 3페이지
@@ -79,5 +79,15 @@ public class BoardMapperTests<boardMapper> {
             List<BoardVO> list = mapper.getListWithPaging(cri);
             list.forEach(board -> log.info(String.valueOf(board.getBno())));
         }
+
+        @Test
+    public void testSearch() {
+        Criteria cri = new Criteria();
+        cri.setKeyword("수정");
+        cri.setType("TC");
+
+        List<BoardVO> list = mapper.getListWithPaging(cri);
+        list.forEach(board -> log.info(String.valueOf(board)));
+    }
 
 }
