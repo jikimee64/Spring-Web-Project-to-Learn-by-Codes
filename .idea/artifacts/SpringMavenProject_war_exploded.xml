@@ -14,7 +14,6 @@
           <element id="module-output" name="SpringMavenProject" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.0.RELEASE" />
@@ -39,6 +38,14 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.29" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.4" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.5" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.10.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.10.1" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:6.0.2" />
+          <element id="library" level="project" name="Maven: org.springframework:springloaded:1.2.8.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

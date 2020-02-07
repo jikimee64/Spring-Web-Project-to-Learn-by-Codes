@@ -44,7 +44,9 @@
     </update>
 
     <select id="getTotalCount" resultType="int">
-        select count(*) from TBL_BOARD where bno > 0
+        select count(*) from TBL_BOARD where
+        <include refid="criteria"></include>
+        bno > 0
     </select>
 
     <select id="getListWithPaging"
