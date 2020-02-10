@@ -8,22 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d604cdf-54d6-4009-a1b4-0a8cf442ef20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/SampleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/domain/SampleVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/domain/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/controller/SampleControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMavenProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMavenProject_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/ReplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/domain/ReplyPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/domain/ReplyVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/mapper/ReplyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/service/ReplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/service/ReplyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/zerock/mapper/ReplyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/reply.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/mapper/ReplyMapperTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/zerock/mapper/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/zerock/mapper/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/domain/Criteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/domain/Criteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/mapper/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/mapper/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/domain/Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/domain/Criteria.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/board/get.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/board/get.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/mapper/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/mapper/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/domain/Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/domain/Criteria.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/board/get.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,9 +76,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Jsp File" />
         <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="Jsp File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -109,8 +113,12 @@
     <property name="settings.editor.selected.configurable" value="debugger.hotswap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.zerock.sample" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java\org\zerock\mapper" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\java\org\zerock\sample" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\java\org\zerock\persistence\sample" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\resources" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\resources" />
@@ -119,12 +127,8 @@
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java\org\zerock\mapper" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\java\org\zerock\sample" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\java\org\zerock\persistence\sample" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\resources" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.zerock.sample" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -185,16 +189,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataSourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReplyMapperTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringMavenProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.zerock.persistence.*" />
+          <option name="PATTERN" value="org.zerock.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.zerock.persistence" />
-      <option name="MAIN_CLASS_NAME" value="org.zerock.persistence.DataSourceTest" />
+      <option name="PACKAGE_NAME" value="org.zerock.mapper" />
+      <option name="MAIN_CLASS_NAME" value="org.zerock.mapper.ReplyMapperTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -289,20 +293,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DataSourceTest" />
       <item itemvalue="JUnit.BoardMapperTests" />
       <item itemvalue="JUnit.BoardServiceTests" />
       <item itemvalue="JUnit.BoardControllerTests" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
       <item itemvalue="JUnit.SampleControllerTests" />
+      <item itemvalue="JUnit.ReplyMapperTests" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReplyMapperTests" />
         <item itemvalue="JUnit.SampleControllerTests" />
         <item itemvalue="JUnit.BoardMapperTests" />
         <item itemvalue="JUnit.BoardControllerTests" />
         <item itemvalue="JUnit.BoardServiceTests" />
-        <item itemvalue="JUnit.DataSourceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -399,7 +403,9 @@
       <workItem from="1581039228031" duration="971000" />
       <workItem from="1581040298143" duration="92000" />
       <workItem from="1581040416511" duration="2485000" />
-      <workItem from="1581043432791" duration="4781000" />
+      <workItem from="1581043432791" duration="15429000" />
+      <workItem from="1581215666110" duration="9757000" />
+      <workItem from="1581293319708" duration="9064000" />
     </task>
     <servers />
   </component>

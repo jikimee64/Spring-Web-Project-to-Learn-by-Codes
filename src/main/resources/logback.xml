@@ -5,7 +5,7 @@
     </encoder>
   </appender>
 
-<!--  <logger name="org.springframework.jdbc" level="debug"/>-->
+  <logger name="src.main.java.org.zerock.controller" level="warn"/>
 
 <!--  <logger name="jdbc" level="OFF"/>-->
 <!--  공부하고 써먹기 / https://www.leafcats.com/45-->

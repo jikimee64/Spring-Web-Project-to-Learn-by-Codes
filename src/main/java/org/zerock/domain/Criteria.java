@@ -3,9 +3,7 @@ package org.zerock.domain;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
-
 
 @ToString
 @Setter
