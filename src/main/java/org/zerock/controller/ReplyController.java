@@ -1,7 +1,6 @@
 package org.zerock.controller;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -11,9 +10,6 @@ import org.zerock.domain.Criteria;
 import org.zerock.domain.ReplyPageDTO;
 import org.zerock.domain.ReplyVO;
 import org.zerock.service.ReplyService;
-
-import javax.print.attribute.standard.Media;
-import java.util.List;
 
 @RequestMapping("/replies/")
 @RestController

@@ -17,14 +17,16 @@ public class BoardVO {
     private String writer;
     private Date regdate;
     private Date updateDate;
+    private int replyCnt;
 
     @Builder //@AllArgsConstructor대신 사용( Builder 사용하는것이 더 안정적)
-    public BoardVO(Long bno, String title, String content, String writer, Date regdate, Date updateDate) {
+    public BoardVO(Long bno, String title, String content, String writer, Date regdate, Date updateDate, int replyCnt) {
         this.bno = bno;
         this.title = title;
         this.content = content;
         this.writer = writer;
         this.regdate = regdate;
         this.updateDate = updateDate;
+        this.replyCnt = replyCnt;
     }
 }

@@ -45,7 +45,8 @@
           <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" />
           <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:6.0.2" />
-          <element id="library" level="project" name="Maven: org.springframework:springloaded:1.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.9.5" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">

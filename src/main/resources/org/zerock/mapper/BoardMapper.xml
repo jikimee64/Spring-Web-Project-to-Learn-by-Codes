@@ -53,11 +53,11 @@
             resultType="org.zerock.domain.BoardVO">
         <![CDATA[
   select
-    bno, title, content, writer, regdate, updatedate
+    bno, title, content, writer, regdate, updatedate, replycnt
   from
       (
       select /*+INDEX_DESC(tbl_board pk_board) */
-        rownum rn, bno, title, content, writer, regdate, updatedate
+        rownum rn, bno, title, content, writer, regdate, updatedate, replycnt
       from
         tbl_board
       where
@@ -69,6 +69,10 @@
   where rn > (#{pageNum} -1) * #{amount}
   ]]>
     </select>
+
+    <update id="updateReplyCnt">
+        update tbl_board set replycnt = replycnt + #{amount} where bno = #{bno}
+    </update>
 
     <sql id="criteria">
         <trim prefix="(" suffix=") AND " prefixOverrides="OR">
