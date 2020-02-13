@@ -48,6 +48,11 @@
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.9.5" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.5" />
           <element id="library" level="project" name="Maven: net.coobird:thumbnailator:0.4.8" />
+          <element id="library" level="project" name="Maven: org.quartz-scheduler:quartz:2.3.2" />
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.4" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.15" />
+          <element id="library" level="project" name="Maven: com.zaxxer:HikariCP-java7:2.4.13" />
+          <element id="library" level="project" name="Maven: org.quartz-scheduler:quartz-jobs:2.3.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

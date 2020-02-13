@@ -1,9 +1,8 @@
 package org.zerock.domain;
 
 import lombok.*;
-import org.zerock.service.BoardService;
-
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -18,9 +17,10 @@ public class BoardVO {
     private Date regdate;
     private Date updateDate;
     private int replyCnt;
+    private List<BoardAttachVO> attachList;
 
     @Builder //@AllArgsConstructor대신 사용( Builder 사용하는것이 더 안정적)
-    public BoardVO(Long bno, String title, String content, String writer, Date regdate, Date updateDate, int replyCnt) {
+    public BoardVO(Long bno, String title, String content, String writer, Date regdate, Date updateDate, int replyCnt, List<BoardAttachVO> attachList) {
         this.bno = bno;
         this.title = title;
         this.content = content;
@@ -28,5 +28,6 @@ public class BoardVO {
         this.regdate = regdate;
         this.updateDate = updateDate;
         this.replyCnt = replyCnt;
+        this.attachList = attachList;
     }
 }

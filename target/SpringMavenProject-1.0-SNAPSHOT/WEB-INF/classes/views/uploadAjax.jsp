@@ -106,6 +106,7 @@
     $(".uploadResult").on("click","span", function(e){
         var targetFile = $(this).data("file");
         var type = $(this).data("type");
+        var targetLi = $(this).closest("li");
         console.log(targetFile);
 
         $.ajax({
@@ -115,6 +116,7 @@
             type: 'POST',
             success: function(result){
                 alert(result);
+                targetLi.remove();
             }
         }); //$.ajax
     });
