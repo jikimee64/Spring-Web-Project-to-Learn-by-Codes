@@ -47,6 +47,7 @@
           <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:6.0.2" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.9.5" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.5" />
+          <element id="library" level="project" name="Maven: net.coobird:thumbnailator:0.4.8" />
         </element>
       </element>
       <element id="directory" name="META-INF">

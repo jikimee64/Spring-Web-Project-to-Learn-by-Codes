@@ -1,6 +1,7 @@
 package org.zerock.config;
 
 import javax.servlet.Filter;
+import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
@@ -21,9 +22,12 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
         return new String[] {"/"};
     }
 
-    @Override //404 에러페이지 별도 지정 설정
-    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
-        registration.setInitParameter("throwExceptionIfNoHandlerFound", "true");
+    @Override
+    protected void customizeRegistration(ServletRegistration.Dynamic registration){
+        registration.setInitParameter("throwExceptionIfNoHandlerFound", "true"); //404 에러페이지 별도 지정 설정
+        //파일 업로드 처리
+        MultipartConfigElement multipartConfig = new MultipartConfigElement("D:\\kimwoocheol\\PersonelStudy\\IntelliJ\\SpringMavenProject_Java\\out\\artifacts\\SpringMavenProject_war_exploded\\upload\\temp", 20971520, 41943040, 20971520);
+        registration.setMultipartConfig(multipartConfig);
     }
 
     //한글 처리 필터 메소드
@@ -35,4 +39,7 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
 
         return new Filter[] { characterEncodingFilter };
     }
+
+
+
 }
