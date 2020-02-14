@@ -1,0 +1,14 @@
+https://jeong-pro.tistory.com/category/%EC%8B%A0%EC%9E%85%20%EA%B0%9C%EB%B0%9C%EC%9E%90%20%EB%A9%B4%EC%A0%91%20%EA%B8%B0%EC%B4%88
+신입 개발자 면접 기초
+
+※
+알것같으면 거창하게 안해도 좋으니 간단히 딱 한문장 말하는거 추천(차분히)
+진짜 모르면 모르겠습니다 말하기(자신감 있게)
+
+1.Pubilc void main  쓰는데 pubilc 대신 쓸수 있는 키워드 다 쓰시오.
+-> private, package, protected  (?)
+
+2.String str = "abc"
+String str = new string 차이
+
+
