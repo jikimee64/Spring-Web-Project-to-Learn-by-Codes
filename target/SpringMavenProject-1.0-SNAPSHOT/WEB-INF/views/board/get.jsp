@@ -2,6 +2,7 @@
          pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 <%@include file="../includes/header.jsp" %>
 
 
@@ -38,8 +39,12 @@
                     <label>Writer</label> <input class="form-control" name='writer'
                                                  value='<c:out value="${board.writer }"/>' readonly="readonly">
                 </div>
-
-                <button data-oper='modify' class="btn btn-default">Modify</button>
+                <sec:authentication property="principal" var="pinfo"/>
+                <sec:authorize access="isAuthenticated()">
+                    <c:if test="${pinfo.username eq board.writer}">
+                        <button data-oper='modify' class="btn btn-default">Modify</button>
+                    </c:if>
+                </sec:authorize>
                 <button data-oper='list' class="btn btn-info">List</button>
 
                 <form id='operForm' action="/board/modify" method="get">
@@ -95,7 +100,9 @@
             <%--            </div>--%>
             <div class="panel-heading">
                 <i class="fa fa-comments fa-fw"></i> Reply
-                <button id="addReplyBtn" class="btn btn-primary btn-xs pull-right">New Reply</button>
+                <sec:authorize access="isAuthenticated()">
+                    <button id="addReplyBtn" class="btn btn-primary btn-xs pull-right">New Reply</button>
+                </sec:authorize>
             </div>
 
             <!-- /.panel-heading-->
@@ -163,14 +170,10 @@
         showList(1);
 
         function showList(page) {
-
             console.log("show list " + page);
-
             replyService.getList({bno: bnoValue, page: page || 1}, function (replyCnt, list) {
-
                 console.log("replyCnt: " + replyCnt);
                 console.log("list: " + list);
-                console.log("list");
 
                 if (page == -1) {
                     pageNum = Math.ceil(replyCnt / 10.0);
@@ -180,9 +183,10 @@
 
                 var str = "";
 
-                if (list == null || list.length == 0) {
-                    return;
-                }
+                //마지막 댓글을 지울때 if문에 걸려서 실시간 삭제처리가 안됨.
+                // if (list == null || list.length == 0) {
+                //     return;
+                // }
                 for (var i = 0, len = list.length || 0; i < len; i++) {
                     str += "<li class='left clearfix' data-rno='" + list[i].rno + "'>";
                     str += " <div><div class='header'><strong class='primary-font'>" + list[i].replyer + "</strong>";
@@ -207,8 +211,18 @@
         var modalRemoveBtn = $("#modalRemoveBtn");
         var modalRegisterBtn = $("#modalRegisterBtn");
 
+        var replyer = null;
+
+        <sec:authorize access="isAuthenticated()">
+        replyer = '<sec:authentication property="principal.username"/>';
+        </sec:authorize>
+
+        var csrfHeaderName = "${_csrf.headerName}";
+        var csrfTokenValue = "${_csrf.token}";
+
         $("#addReplyBtn").on("click", function (e) {
             modal.find("input").val("");
+            modal.find("input[name='replyer']").val(replyer).attr("readonly", "readonly");
             modalInputReplyDate.closest("div").hide();
             modal.find("button[id != 'modalCloseBtn']").hide();
 
@@ -218,6 +232,11 @@
 
         $("#modalCloseBtn").on("click", function (e) {
             modal.modal('hide');
+        });
+
+        //Ajax spring security header...
+        $(document).ajaxSend(function (e, xhr, options) {
+            xhr.setRequestHeader(csrfHeaderName, csrfTokenValue);
         });
 
         modalRegisterBtn.on("click", function (e) {
@@ -240,7 +259,7 @@
             var rno = $(this).data("rno");
             replyService.get(rno, function (reply) {
                 modalInputReply.val(reply.reply);
-                modalInputReplyer.val(reply.replyer);
+                modalInputReplyer.val(reply.replyer).attr("readonly", "readonly");;
                 modalInputReplyDate.val(replyService.displayTime(reply.replyDate)).attr("readonly", "readonly");
                 modal.data("rno", reply.rno);
 
@@ -254,7 +273,25 @@
 
         //댓글 수정
         modalModBtn.on("click", function (e) {
-            var reply = {rno: modal.data("rno"), reply: modalInputReply.val()};
+
+            var originalReplyer = modalInputReplyer.val();
+
+            var reply = {rno: modal.data("rno"), reply: modalInputReply.val(), replyer: originalReplyer};
+
+            if (!replyer) {
+                alert("로그인후 수정이 가능합니다.");
+                modal.modal("hide");
+                return;
+            }
+
+            console.log("Original Replyer: " + originalReplyer);
+
+            if (replyer != originalReplyer) {
+                alert("자신이 작성한 댓글만 수정이 가능합니다.");
+                modal.modal("hide");
+                return;
+            }
+
             replyService.update(reply, function (result) {
                 alert(result);
                 modal.modal("hide");
@@ -265,7 +302,27 @@
         //댓글 삭제
         modalRemoveBtn.on("click", function (e) {
             var rno = modal.data("rno");
-            replyService.remove(rno, function (result) {
+
+            console.log("RNO: " + rno);
+            console.log("REPLYER:  " + replyer);
+
+            if (!replyer) {
+                alert("로그인후 삭제가 가능합니다.");
+                modal.modal("hide");
+                return;
+            }
+
+            var originalReplyer = modalInputReplyer.val();
+
+            console.log("Original Replyer: " + originalReplyer); //댓글의 원래 작성자
+
+            if (replyer != originalReplyer) {
+                alert("자신이 작성한 댓글만 삭제가 가능합니다.");
+                modal.modal("hide");
+                return;
+            }
+
+            replyService.remove(rno, originalReplyer, function (result) {
                 alert(result);
                 modal.modal("hide");
                 showList(pageNum);
@@ -401,7 +458,7 @@
                         var fileCallPath = encodeURIComponent(attach.uploadPath + "/s_" + attach.uuid + "_" + attach.fileName);
 
                         str += "<li data-path='" + attach.uploadPath + "' data-uuid='" + attach.uuid + "' data-filename='" + attach.fileName + "' data-type='" + attach.fileType + "' ><div>";
-                        str += "<span> "+ attach.fileName+"</span><br/>";
+                        str += "<span> " + attach.fileName + "</span><br/>";
                         str += "<img src='/display?fileName=" + fileCallPath + "'>";
                         str += "</div>";
                         str += "</li>";
@@ -417,32 +474,32 @@
             }); //end getjson
         })(); //end function
 
-        $(".uploadResult").on("click", "li", function(e) {
+        $(".uploadResult").on("click", "li", function (e) {
             console.log("view image");
 
             var liObj = $(this);
 
-            var path = encodeURIComponent(liObj.data("path")+"/"+liObj.data("uuid")+"_"+liObj.data("filename"));
+            var path = encodeURIComponent(liObj.data("path") + "/" + liObj.data("uuid") + "_" + liObj.data("filename"));
 
-            if(liObj.data("type")){
+            if (liObj.data("type")) {
                 showImage(path.replace(new RegExp(/\\/g), "/"));
-            } else{
+            } else {
                 //download
-                self.location="/download?fileName="+path
+                self.location = "/download?fileName=" + path
             }
         });
 
-        function showImage(fileCallPath){
+        function showImage(fileCallPath) {
             alert(fileCallPath);
             $(".bigPictureWrapper").css("display", "flex").show();
             $(".bigPicture")
-                .html("<img src='/display?fileName="+fileCallPath+"'>")
-                .animate({width:'100%', height:'100%'}, 1000);
+                .html("<img src='/display?fileName=" + fileCallPath + "'>")
+                .animate({width: '100%', height: '100%'}, 1000);
         }
 
-        $(".bigPictureWrapper").on("click", function(e) {
-            $(".bigPicture").animate({width:'0%', height: '0%'}, 1000);
-            setTimeout(function() {
+        $(".bigPictureWrapper").on("click", function (e) {
+            $(".bigPicture").animate({width: '0%', height: '0%'}, 1000);
+            setTimeout(function () {
                 $('.bigPictureWrapper').hide();
             }, 1000);
         });

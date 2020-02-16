@@ -8,38 +8,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d604cdf-54d6-4009-a1b4-0a8cf442ef20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/SecurityInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/SecurityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/domain/AuthVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/domain/MemberVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/mapper/MemberMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/security/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/security/CustomLoginSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/security/CustomNoOpPasswordEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/security/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/security/domain/CustomUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/zerock/mapper/MemberMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accessError.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customLogin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customLogout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sample/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sample/all.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sample/member.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/mapper/MemberMapperTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/security/MemberTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMavenProject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMavenProject_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/ServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/0308c530-ad9b-4c5c-a4fe-ff921a037652_훈련과정탐색표(김우철).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/09486334-c39d-4bec-953a-2cd727d7f701_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/0ce0d66a-9cf1-4d73-937d-cae0b2b21d0c_크기수정_취업사진.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/1282f4d8-6dcc-439e-96b7-f86a83d6c492_자소서 참고.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/1947e032-f541-4b82-9c10-792337262a43_자바기술면접.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/2c31ad16-48ac-4f09-ba8a-372c6bc0f874_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/32fc6ab4-2d87-492b-9de7-031b058c7e34_쟈니_md작성 참고.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/3627ae19-f988-48a3-a670-7aab2dea475e_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/43e5997f-4bbf-4a97-93ca-cccd48a43ff9_자바기술면접.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/4717625a-41d3-4a0f-a6fd-69d54a7b0123_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/49ddc6ed-f215-4246-a4b4-ac9b486791b2_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/4f183809-e55a-4b07-8ef1-4374e075f44a_크기수정_취업사진.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/4f3a9306-85c0-4b6f-be51-37a9ce44a3c3_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/561206d4-fe88-406c-a851-b96485bce798_통장 사본.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/5f53b6fe-18b1-4610-b0a8-c7dd4da0816d_일반_이력서.hwp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/79ea89b6-5bb2-4f5e-b2d3-5e37e06cb59a_쟈니_md작성 참고.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/7d3dedca-3e57-4e8d-bc4e-fd1ddf1fa8d3_자바기술면접.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/7e5326a8-eb56-46a5-b332-d437d958227c_일반_이력서.hwp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/83cdf08d-448d-4b7e-b212-67eaad88deff_자바기술면접.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/8468e39c-bc5f-4e58-b201-88a965f71747_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/8a0e0465-43cf-417d-ba42-88c4aafe73b8_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/8a5a984a-2976-40e6-a0f2-96a178d3d1d6_자바기술면접.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/8abb9c83-a174-4e4f-ac72-bf2bf8c09adb_쟈니_md작성 참고.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/9b066664-385c-45f4-b49a-f69780db4fcd_쟈니_md작성 참고.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/9c0a2c97-954a-4430-82dd-5e4d90dd9e09_일반_이력서.hwp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/cdb3eae9-f159-4057-86c2-8bbf288b26dd_credentials.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/d3d105c6-0b62-484f-ad13-c2018474d6d4_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/d6e7c97e-a7d9-4a44-a0ea-0d7291040270_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/d918adfb-2468-45cb-8be4-5a4bd115380d_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/de34cbfd-2339-4ccb-8735-db7ae9ce8622_자바기술면접.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/ea941ef1-0255-4047-be59-d3db9d2c8f90_훈련과정탐색표(김우철).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/ec06347f-4e7f-4842-a57a-63dc0d78a39f_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/ec9e2a9d-d4fe-4c71-8786-76dcfd884bb8_쟈니_md작성 참고.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/f1a6529a-a5dd-4199-b6f1-884f17d6302e_자소서 참고.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/f7abfddf-b2b6-4382-8244-4ccbd8c4eea9_자바기술면접.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/f96d0bf9-3117-4ff5-9111-5ce0ad374678_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_09486334-c39d-4bec-953a-2cd727d7f701_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_0ce0d66a-9cf1-4d73-937d-cae0b2b21d0c_크기수정_취업사진.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_2c31ad16-48ac-4f09-ba8a-372c6bc0f874_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_3627ae19-f988-48a3-a670-7aab2dea475e_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_4717625a-41d3-4a0f-a6fd-69d54a7b0123_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_49ddc6ed-f215-4246-a4b4-ac9b486791b2_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_4f183809-e55a-4b07-8ef1-4374e075f44a_크기수정_취업사진.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_4f3a9306-85c0-4b6f-be51-37a9ce44a3c3_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_561206d4-fe88-406c-a851-b96485bce798_통장 사본.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_8468e39c-bc5f-4e58-b201-88a965f71747_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_8a0e0465-43cf-417d-ba42-88c4aafe73b8_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_d3d105c6-0b62-484f-ad13-c2018474d6d4_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_d6e7c97e-a7d9-4a44-a0ea-0d7291040270_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_d918adfb-2468-45cb-8be4-5a4bd115380d_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_ec06347f-4e7f-4842-a57a-63dc0d78a39f_주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SpringMavenProject_war_exploded/upload/2020/02/13/s_f96d0bf9-3117-4ff5-9111-5ce0ad374678_졸업예정증명서(김우철).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/ServletConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/ServletConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/controller/ReplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/ReplyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/mapper/ReplyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/mapper/ReplyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/security/CustomLoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/security/CustomLoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customLogout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customLogout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/reply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/mapper/ReplyMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/mapper/ReplyMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/ServletConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/ServletConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/BoardController$BoardControllerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/BoardController$BoardControllerBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/ReplyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/ReplyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/controller/UploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/security/CustomLoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/org/zerock/security/CustomLoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/board/get.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/board/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/board/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/board/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/board/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/customLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/customLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/classes/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/board/get.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/board/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/board/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/board/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/board/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/customLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/customLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/resources/js/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMavenProject-1.0-SNAPSHOT/resources/js/reply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/controller/BoardController$BoardControllerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/controller/BoardController$BoardControllerBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/controller/ReplyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/controller/ReplyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/controller/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/controller/UploadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/zerock/security/CustomLoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/zerock/security/CustomLoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/board/get.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/board/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/board/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/board/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/board/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/customLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/customLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/zerock/mapper/ReplyMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/zerock/mapper/ReplyMapperTests.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,12 +193,8 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java\org\zerock\security" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\webapp\resources\img" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java\org\zerock\mapper" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\java\org\zerock\sample" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\java\org\zerock\persistence\sample" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.zerock.sample" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\webapp\WEB-INF\views" />
@@ -139,8 +203,12 @@
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java\org\zerock\mapper" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java\org\zerock\domain" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.zerock.sample" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java\org\zerock\security" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\webapp\resources\img" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\main\java\org\zerock\mapper" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\java\org\zerock\sample" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\SpringMavenProject_Java\src\test\java\org\zerock\persistence\sample" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,17 +376,17 @@
       <item itemvalue="JUnit.ReplyMapperTests" />
       <item itemvalue="JUnit.AopServiceTests" />
       <item itemvalue="JUnit.SampleTxServiceTests" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
       <item itemvalue="JUnit.MemberTests" />
       <item itemvalue="JUnit.MemberMapperTests" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReplyMapperTests" />
         <item itemvalue="JUnit.MemberMapperTests" />
         <item itemvalue="JUnit.MemberTests" />
         <item itemvalue="JUnit.SampleTxServiceTests" />
         <item itemvalue="JUnit.AopServiceTests" />
-        <item itemvalue="JUnit.ReplyMapperTests" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +495,8 @@
       <workItem from="1581570706329" duration="272000" />
       <workItem from="1581582407349" duration="54000" />
       <workItem from="1581582883657" duration="27329000" />
-      <workItem from="1581644458245" duration="13953000" />
+      <workItem from="1581644458245" duration="33047000" />
+      <workItem from="1581846369679" duration="2128000" />
     </task>
     <servers />
   </component>
@@ -446,5 +515,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/zerock/controller/UploadController.java</url>
+          <line>208</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -18,9 +18,12 @@ import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
+import org.springframework.security.web.csrf.CsrfFilter;
+import org.springframework.web.filter.CharacterEncodingFilter;
 import org.zerock.security.CustomAccessDeniedHandler;
 import org.zerock.security.CustomLoginSuccessHandler;
 import org.zerock.security.CustomUserDetailsService;
+import sun.misc.CharacterEncoder;
 
 import javax.sql.DataSource;
 
@@ -101,6 +104,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .key("zerock")
                 .tokenRepository(persistentTokenRepository())
                 .tokenValiditySeconds(604800);
+
+        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+        filter.setEncoding("UTF-8");
+        filter.setForceEncoding(true);
+        http.addFilterBefore(filter, CsrfFilter.class);
     }
 
     @Bean

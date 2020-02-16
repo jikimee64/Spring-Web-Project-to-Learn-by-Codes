@@ -5,6 +5,7 @@ import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 //DispatcherServlet 사용를 위한 상속 후 구현
@@ -36,10 +37,8 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");
         characterEncodingFilter.setForceEncoding(true);
-
-        return new Filter[] { characterEncodingFilter };
+        DelegatingFilterProxy delegatingFilterProxy = new DelegatingFilterProxy("springSecurityFilterChain");
+        return new Filter[] { characterEncodingFilter, delegatingFilterProxy };   //순서 바뀔시 시큐리티 한글 처리 안됨
     }
-
-
 
 }
